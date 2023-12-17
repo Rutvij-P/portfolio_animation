@@ -1,0 +1,40 @@
+.cursor-reveal-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: white; /* Initial background color */
+    overflow: hidden;
+  }
+  
+  .scratch-off {
+    position: absolute;
+    width: 350px; /* Width of the "scratch" */
+    height: 350px; /* Height of the "scratch" */
+    background-color: grey; /* Color revealed by the "scratch" */
+    border-radius: 50%; /* Circular "scratch" shapes */
+    pointer-events: none;
+  }
+  
+  .portfolio-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 5rem;
+    color: black; /* Text color */
+    margin: 0;
+    z-index: 10; /* Ensures text is above the "scratched off" effect */
+  }
+  
+  .hidden-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: white; /* Same color as the initial background */
+    text-align: center;
+    white-space: pre-wrap;
+    user-select: none;
+    z-index: 1; /* Below the "scratch off" divs */
+  }
+  
