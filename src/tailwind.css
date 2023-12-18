@@ -1,0 +1,11 @@
+/* Tailwind CSS classes for image styles */
+/* Landscape images */
+.img-landscape {
+    @apply w-auto h-56 object-cover; /* Adjust the height as needed */
+  }
+  
+  /* Portrait images */
+  .img-portrait {
+    @apply h-25 object-cover; /* Adjust the width as needed */
+  }
+  
