@@ -2,7 +2,8 @@ import React, {useState} from 'react';
 import CursorRevealText from './components/CursorRevealText';
 import Navbar from './components/Navbar';
 import Project from './components/Projects';
-
+import Portfolio from './components/Portfolio';
+import { motion } from 'framer-motion';
 
 
 function App() {
@@ -16,6 +17,12 @@ function App() {
 
   const [sectionBgColor, setSectionBgColor] = useState('');
 
+
+  const borderVariants = {
+    hidden: { width: 0 },
+    visible: { width: '100%', transition: { duration: 0.8 } }
+  };
+
   const handleProjectHover = (color) => {
     setSectionBgColor(color);
   }
@@ -24,7 +31,6 @@ function App() {
     <div className="App" style={{ backgroundColor: sectionBgColor}}>
       <Navbar />
       <CursorRevealText />
-      <div className="max-w mx-auto my-8 border-t-2 border-black"></div>
       {projects.map((project, index) => (
         <Project
           key={project.id}
@@ -38,6 +44,8 @@ function App() {
           onHoverEnd={() => handleProjectHover('')}
         />       
       ))}
+      <motion.div className="my-8 border-b-4 w-screen border-black" variants={borderVariants} />
+      <Portfolio />
       {/* other components */}
     </div>
   );
