@@ -1,9 +1,24 @@
-import React from 'react';
+import React, {useState} from 'react';
 // import { motion } from 'framer-motion';
 
 
 
 const Portfolio = () => {
+  // State to track which timeline item is open
+  const [openItem, setOpenItem] = useState(null);
+
+  // Timeline data could be props or fetched from an API
+  const timelineData = [
+    { id: 1, title: "HELLA – IT Abteilung", year: "2017", detail: "More information about HELLA..." },
+    { id: 2, title: "HTL Villach – Medientechnik", year: "2019", detail: "More information about HTL Villach..." },
+    // ... other timeline items
+  ];
+
+  // Function to toggle the open item
+  const toggleItem = (id) => {
+    setOpenItem(openItem === id ? null : id);
+  };
+
   return (
     <div className="flex flex-col md:flex-row md:justify-between p-8 pt-20 bg-white">
       <div className="md:w-1/2 relative -translate-y-6">
@@ -20,12 +35,27 @@ const Portfolio = () => {
       </p>
     </div>
   </div>
-  <div className="space-y-3">
-    {/* Add actual links and text accordingly */}
-    <p>HEUTE</p>
-    <p>HTL Villach - Medientechnik</p>
-    {/* ... more items */}
-  </div>
+  <div className="md:w-full mt-4">
+        {timelineData.map((item) => (
+          <div key={item.id} className="mb-1">
+            <div 
+              className="cursor-pointer border-t border-black" 
+              onClick={() => toggleItem(item.id)}
+            >
+              <div className="flex justify-between items-center">
+                <h3 className="text-lg font-bold">{item.title}</h3>
+                <span className="text-sm">{item.year}</span>
+              </div>
+            </div>
+            {openItem === item.id && (
+              <div className="text-sm mt-1 leading-snug">
+                {item.detail}
+              </div>
+            )}
+          </div>
+        ))}
+        <div className="cursor-pointer border-t border-black py-2"></div>
+      </div>
 </div>
 
       <div className="md:w-1/3 space-y-6 mt-8 md:mt-0">
