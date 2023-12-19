@@ -3,6 +3,7 @@ import CursorRevealText from './components/CursorRevealText';
 import Navbar from './components/Navbar';
 import Project from './components/Projects';
 import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
 import { motion } from 'framer-motion';
 
 
@@ -46,6 +47,7 @@ function App() {
       ))}
       <motion.div className="my-8 border-b-4 w-screen border-black" variants={borderVariants} />
       <Portfolio />
+      <Contact />
       {/* other components */}
     </div>
   );

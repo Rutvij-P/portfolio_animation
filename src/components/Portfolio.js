@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-// import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 
 
@@ -19,6 +19,16 @@ const Portfolio = () => {
     setOpenItem(openItem === id ? null : id);
   };
 
+  const listItemVariants = {
+    closed: { height: 0, opacity: 0 },
+    open: { height: 'auto', opacity: 1 }
+  };
+
+  const listVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 }
+  };
+
   return (
     <div className="flex flex-col md:flex-row md:justify-between p-8 pt-20 bg-white">
       <div className="md:w-1/2 relative -translate-y-6">
@@ -35,27 +45,40 @@ const Portfolio = () => {
       </p>
     </div>
   </div>
-  <div className="md:w-full mt-4">
+  <motion.div 
+  className="md:w-full mt-4"
+  initial="hidden"
+  animate="visible"
+  variants={listVariants}>
         {timelineData.map((item) => (
-          <div key={item.id} className="mb-1">
-            <div 
+          <motion.div key={item.id} className="mb-1">
+            <motion.div 
               className="cursor-pointer border-t border-black" 
               onClick={() => toggleItem(item.id)}
+              layout
             >
               <div className="flex justify-between items-center">
                 <h3 className="text-lg font-bold">{item.title}</h3>
                 <span className="text-sm">{item.year}</span>
               </div>
-            </div>
+            </motion.div>
+            <AnimatePresence>
             {openItem === item.id && (
-              <div className="text-sm mt-1 leading-snug">
+              <motion.div 
+              className="text-sm mt-1 leading-snug"
+              initial="closed"
+              animate="open"
+              exit="closed"
+              variants={listItemVariants}
+              transition={{duration: 0.2}}>
                 {item.detail}
-              </div>
+              </motion.div>
             )}
-          </div>
+            </AnimatePresence>
+          </motion.div>
         ))}
         <div className="cursor-pointer border-t border-black py-2"></div>
-      </div>
+    </motion.div>
 </div>
 
       <div className="md:w-1/3 space-y-6 mt-8 md:mt-0">

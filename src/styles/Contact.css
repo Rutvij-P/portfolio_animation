@@ -1,0 +1,18 @@
+@keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+  
+  .animate-marquee {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .marquee-content {
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+  }
+  
+  /* The "gap" between the end of one list and the start of the next is determined
+  by the width of the `.marquee-content` itself. */
+  

@@ -22,7 +22,7 @@ const CursorRevealText = () => {
         />
       ))}
       <h1 className="portfolio-text">PORTFOLIO</h1>
-      <p className="hidden-text">
+      <p className="hidden-text indent-40 text-left w-full px-28">
         Bastian Gasser ist ein exhibierender Kommunikationsdesigner mit Fokus auf Visuelle Identitäten, Motion & Fotografie. Er hat eine Leidenschaft für reduziertes Design und klare Botschaften.
       </p>
     </div>
