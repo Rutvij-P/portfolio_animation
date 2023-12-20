@@ -10,7 +10,7 @@
   
   .marquee-content {
     display: inline-block;
-    animation: marquee 10s linear infinite;
+    animation: marquee 8s linear infinite;
   }
   
   /* The "gap" between the end of one list and the start of the next is determined

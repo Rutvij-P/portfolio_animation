@@ -8,8 +8,8 @@
   
   .scratch-off {
     position: absolute;
-    width: 350px; /* Width of the "scratch" */
-    height: 350px; /* Height of the "scratch" */
+    width: 400px; /* Width of the "scratch" */
+    height: 400px; /* Height of the "scratch" */
     background-color: grey; /* Color revealed by the "scratch" */
     border-radius: 50%; /* Circular "scratch" shapes */
     pointer-events: none;

@@ -20,8 +20,8 @@ const ContactSection = () => {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen relative">
-      <div className="absolute top-4 right-4 pt-32 text-8xl pr-48">
-        <a href="mailto:hello@gasser-bastian.at" className="text-3lg font-bold">hello@gasser-bastian.at</a>
+      <div className="absolute top-4 right-4 pt-32 pr-48 pl-48">
+        <a href="mailto:jivturdev@gmail.com" className="font-bold text-2xl sm:text-4xl md:text-4xl lg:text-6xl xl:text-6xl 2xl:text-8xl">jivturdev@gmail.com</a>
       </div>
 
       <div className='py-24'>
@@ -33,7 +33,7 @@ const ContactSection = () => {
       <div className="overflow-hidden w-full border-t-4 border-b-4 border-black animate-marquee">
         <div className="whitespace-nowrap marquee-content">
           {duplicatedSkills.map((skill, index) => (
-            <span key={index} className="mx-5">
+            <span key={index} className="mx-8 xl:mx-16">
               {skill}
             </span>
           ))}
@@ -41,7 +41,7 @@ const ContactSection = () => {
       </div>
 
       <div className="absolute bottom-4 right-4">
-        <FiArrowUp className="text-4xl cursor-pointer" onClick={scrollToTop} />
+        <FiArrowUp className="text-8xl cursor-pointer" onClick={scrollToTop} />
       </div>
     </div>
   );
