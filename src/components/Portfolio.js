@@ -37,7 +37,7 @@ const Portfolio = () => {
   </p>
   {/* Image container with relative positioning */}
   <div className="relative ">
-    <img src="/profilep.jpg" alt="Bastian Gasser" className="w-full rounded-lg" />
+    <img src="/profilep-min.png" alt="Bastian Gasser" className="w-full rounded-lg" />
     {/* Absolute positioned text */}
     <div className="absolute top-0 left-0 w-full">
       <p className="text-2xl">
