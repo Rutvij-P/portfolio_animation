@@ -10,12 +10,12 @@ import { motion } from 'framer-motion';
 function App() {
   // Define your projects array or fetch it from an API
   const projects = [
-    { id: 1, title: "VEHIQ", description: "Founder, Fullstack software development, machine learning", year: "2023", image: "/vehiq.png", bgColor: "#FFC793" },
-    { id: 2, title: "DOLI", description: "Fullstack Web Development, Database Engineer ", year: "2023", image: "/Doli.png", bgColor: "#93FFD8" },
+    { id: 1, title: "VEHIQ", description: "Founder, Fullstack software development, machine learning", year: "2023", image: "/vehiq-min.png", bgColor: "#FFC793" },
+    { id: 2, title: "DOLI", description: "Fullstack Web Development, Database Engineer ", year: "2023", image: "/Doli-min.png", bgColor: "#93FFD8" },
     { id: 3, title: "JOB-GRAM", description: "Motion Graphics, Social Media, Social Learning", year: "2022", image: "/jobit.png", bgColor: "#FFEE93" },
-    { id: 4, title: "PARALLAX SCROLL", description: "Motion Graphics, Social Media, Social Learning", year: "2022", image: "/parallaxscrollss.png", bgColor: "#FF93AB" },
-    { id: 5, title: "3D PORTFOLIO", description: "Motion Graphics, Social Media, Social Learning", year: "2022", image: "/portfoliopagess.png", bgColor: "#93D8FF" },
-    { id: 6, title: "GYM RECIPE APP", description: "Motion Graphics, Social Media, Social Learning", year: "2022", image: "/gymappss.png", bgColor: "#C793FF" },    
+    { id: 4, title: "PARALLAX SCROLL", description: "Motion Graphics, Social Media, Social Learning", year: "2022", image: "/parallaxscrollss-min.png", bgColor: "#FF93AB" },
+    { id: 5, title: "3D PORTFOLIO", description: "Motion Graphics, Social Media, Social Learning", year: "2022", image: "/portfoliopagess-min.png", bgColor: "#93D8FF" },
+    { id: 6, title: "GYM RECIPE APP", description: "Motion Graphics, Social Media, Social Learning", year: "2022", image: "/gymappss-min.png", bgColor: "#C793FF" },    
     { id: 7, title: "SUM HARNESS", description: "Motion Graphics, Social Media, Social Learning", year: "2022", image: "/cover.png", bgColor: "#93FFC7" },  
     // ... other project objects
   ];
