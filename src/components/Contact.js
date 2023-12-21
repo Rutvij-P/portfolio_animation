@@ -20,13 +20,13 @@ const ContactSection = () => {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen relative">
-      <div className="absolute top-4 right-4 pt-32 pr-48 pl-48">
+      <div className="absolute top-4 right-4 pt-32 pr-42 pl-48">
         <a href="mailto:jivturdev@gmail.com" className="font-bold text-2xl sm:text-4xl md:text-4xl lg:text-6xl xl:text-6xl 2xl:text-8xl">jivturdev@gmail.com</a>
       </div>
 
       <div className='py-24'>
         <h1 className="text-6xl font-bold underline italic">GET IN TOUCH</h1>
-        <p className="text-lg">Click to connect on LinkedIn</p>
+        <p className="text-lg">Connect with me on LinkedIn!</p>
       </div>
 
       {/* Rotating skills strip */}

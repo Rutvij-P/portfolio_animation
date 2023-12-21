@@ -75,7 +75,7 @@ const Project = ({ id, title, description, year, image, onHover, onHoverEnd }) =
       <div className="flex justify-between items-end mb-2 z-20">          
         <div className="flex gap-4">            
           <motion.span className="text-2xl font-light" variants={textVariants}>{id.toString().padStart(2, '0')}</motion.span>
-          <motion.h3 className="text-8xl font-bold leading-none" variants={textVariants}>{title}</motion.h3>
+          <motion.h3 className="text-7xl font-bold leading-none" variants={textVariants}>{title}</motion.h3>
         </div>
       </div>
       <motion.p className="text-xl font-light tracking-wider text-right uppercase" variants={textVariants}>{description}</motion.p>

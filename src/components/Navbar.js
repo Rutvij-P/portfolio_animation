@@ -17,7 +17,7 @@ const Navbar = () => {
         <div></div>
       </div>
       <ul className={`nav-menu ${menuOpen ? 'open' : ''}`}>
-        <li><a href="#projekte" onClick={toggleMenu}>Project</a></li>
+        <li><a href="#Projects" onClick={toggleMenu}>Project</a></li>
         <li><a href="#archiv" onClick={toggleMenu}>Archiv</a></li>
         <li><a href="#info" onClick={toggleMenu}>Info</a></li>
         <li><a href="#kontakt" onClick={toggleMenu}>Contact</a></li>
