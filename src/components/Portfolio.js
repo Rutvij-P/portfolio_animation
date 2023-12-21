@@ -9,8 +9,10 @@ const Portfolio = () => {
 
   // Timeline data could be props or fetched from an API
   const timelineData = [
-    { id: 1, title: "HELLA – IT Abteilung", year: "2017", detail: "More information about HELLA..." },
-    { id: 2, title: "HTL Villach – Medientechnik", year: "2019", detail: "More information about HTL Villach..." },
+    { id: 1, title: "VEHIQ – Founder, Software Engineer", year: "2023-Current", detail: "More information about VEHIQ..." },
+    { id: 2, title: "SFSU – Software Engineer", year: "2020-2023", detail: "More information about SFSU role..." },
+    { id: 3, title: "SFSU – Student Instructor", year: "2020-2023", detail: "More information about SFSU role..." },
+    { id: 4, title: "SSM InfoTech – Software Intern", year: "2018-2018", detail: "More information about SSM InfoTech..." },
     // ... other timeline items
   ];
 
@@ -33,7 +35,7 @@ const Portfolio = () => {
     <div className="flex flex-col md:flex-row md:justify-between p-8 pt-20 bg-white">
       <div className="md:w-1/2 relative -translate-y-6">
   <p className="text-3xl">
-    Kommunikationsdesigner
+    Software Engineer
   </p>
   {/* Image container with relative positioning */}
   <div className="relative ">
@@ -89,7 +91,7 @@ const Portfolio = () => {
           {/* ... more items */}
         </div>
         <div className="space-y-1">
-          <h2 className="text-2xl underline font-semibold">Kompetenzen:</h2>
+          <h2 className="text-2xl underline font-semibold">Soft Skills:</h2>
           <p>Strategie & Konzeption</p>
           <p>Visuelle Identitäten</p>
           {/* ... more items */}
@@ -101,7 +103,7 @@ const Portfolio = () => {
           {/* ... more items */}
         </div>
         <div className="space-y-1">
-          <h2 className="text-2xl underline font-semibold">Preise:</h2>
+          <h2 className="text-2xl underline font-semibold">Connect here:</h2>
           <p>Awwwards (HM) - kurzform.®</p>
           <p>Awwwards (HM) - Portfolio</p>
           {/* ... more items */}

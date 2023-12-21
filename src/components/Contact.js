@@ -4,11 +4,12 @@ import '../styles/Contact.css';
 
 const ContactSection = () => {
     const skills = [
-    "INTERFACEDESIGN (UX/UI)",
+    "USER INTERFACE (UX/UI)",
     "MOTION DESIGN",
-    "FOTOGRAFIE (ANALOG/DIGITAL)",
-    "STRATEGIE & KONZEPTION",
-    "VISUELLE IDENTITÄTEN",
+    "FRONTEND DEVELOPMENT",
+    "BACKEND DEVELOPMENT",
+    "MACHINE LEARNING",
+    "SOFTWARE DEVELOPMENT",
     // ... more skills
   ];
 
