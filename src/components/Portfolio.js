@@ -9,10 +9,10 @@ const Portfolio = () => {
 
   // Timeline data could be props or fetched from an API
   const timelineData = [
-    { id: 1, title: "VEHIQ – Founder, Software Engineer", year: "2023-Current", detail: "More information about VEHIQ..." },
-    { id: 2, title: "SFSU – Software Engineer", year: "2020-2023", detail: "More information about SFSU role..." },
-    { id: 3, title: "SFSU – Student Instructor", year: "2020-2023", detail: "More information about SFSU role..." },
-    { id: 4, title: "SSM InfoTech – Software Intern", year: "2018-2018", detail: "More information about SSM InfoTech..." },
+    { id: 1, title: "VEHIQ – Founder, Software Engineer", year: "2023-Current", detail: "• Founder of VehiQ and Developed in UC Berkeley AI/LLM Hackathon • Spearheading groundbreaking car design startup • Creating an app that transforms hand-drawn car sketches into realistic 3D models • Leveraging advanced technologies like Convolutional Neural Networks (CNNs) and deep learning algorithms" },
+    { id: 2, title: "SFSU – Software Engineer", year: "2020-2023", detail: "• FrontEnd Developer for an internal full stack web app designed to assist and connect SF State students and Bay Area recruiters • Utilized modern web technologies such as React, Typescript, Redux, and Tailwind for building a user-friendly interface. • Created and Implemented user profile creation, resume and portfolio uploads, and advanced job search functionality based on skills and experience." },
+    { id: 3, title: "SFSU – Student Instructor", year: "2020-2023", detail: "• Mentored students with fair yet specific performance modules, offering support when needed, and providing constructive feedback on a case-by-case basis. • Retained interest and maximized receptive learning by educating students using hands-on instructional techniques. • Supported student learning objectives through personalized and small group assistance." },
+    { id: 4, title: "SSM InfoTech – Software Intern", year: "2018-2018", detail: "• Designed and tested client-server network components. • Learned software engineering process improvements and best practices. • Assisted with the design and development of HTML projects." },
     // ... other timeline items
   ];
 
@@ -85,27 +85,33 @@ const Portfolio = () => {
 
       <div className="md:w-1/3 space-y-6 mt-8 md:mt-0">
         <div className="space-y-1">
-          <h2 className="text-2xl underline font-semibold">Hard Skills:</h2>
-          <p>Adobe CC</p>
-          <p>Figma</p>
+          <h2 className="text-2xl underline font-semibold">Programming Languages:</h2>
+          <p>JavaScript</p>
+          <p>Python</p>
+          <p>C++</p>
+          <p>Java</p>
           {/* ... more items */}
         </div>
         <div className="space-y-1">
-          <h2 className="text-2xl underline font-semibold">Soft Skills:</h2>
-          <p>Strategie & Konzeption</p>
-          <p>Visuelle Identitäten</p>
+          <h2 className="text-2xl underline font-semibold">Web Development:</h2>
+          <p>React</p>
+          <p>Vue.js</p>
+          <p>Node.js</p>
+          <p>Django</p>
           {/* ... more items */}
         </div>
         <div className="space-y-1">
-          <h2 className="text-2xl underline font-semibold">Achievements:</h2>
-          <p>K3 Film Festival - Hoch Unten</p>
-          <p>MKG Hamburg - THE F*WORD</p>
+          <h2 className="text-2xl underline font-semibold">Database Management:</h2>
+          <p>MySQL</p>
+          <p>PostgreSQL</p>
+          <p>MongoDB</p>
           {/* ... more items */}
         </div>
         <div className="space-y-1">
           <h2 className="text-2xl underline font-semibold">Connect here:</h2>
-          <p>Awwwards (HM) - kurzform.®</p>
-          <p>Awwwards (HM) - Portfolio</p>
+          <p>LinkedIN</p>
+          <p>Github</p>
+          <p>Dev.to</p>
           {/* ... more items */}
         </div>
       </div>
