@@ -6,7 +6,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: transparent;
+    /* background-color: transparent; */
     z-index: 1000; /* High z-index to ensure the navbar is above other content */
   }
   

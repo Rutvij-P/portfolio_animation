@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
+    <nav className="navbar bg-white">
       <div className="logo">rutvij patel</div>
       <div className={`nav-icon ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
         <div></div>

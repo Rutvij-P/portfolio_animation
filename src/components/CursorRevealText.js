@@ -29,7 +29,7 @@ const CursorRevealText = () => {
   };
 
   return (
-    <div ref={containerRef} className="cursor-reveal-container" onMouseMove={onMouseMove}>
+    <div ref={containerRef} className="cursor-reveal-container cursor-none" onMouseMove={onMouseMove}>
       {trail.map((pos, index) => (
         <div
           key={index}

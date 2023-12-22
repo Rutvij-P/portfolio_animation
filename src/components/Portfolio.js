@@ -109,9 +109,9 @@ const Portfolio = () => {
         </div>
         <div className="space-y-1">
           <h2 className="text-2xl underline font-semibold">Connect here:</h2>
-          <p>LinkedIN</p>
-          <p>Github</p>
-          <p>Dev.to</p>
+          <a href='https://www.linkedin.com/in/jivtur/' target='_blank'><p>LinkedIN</p></a>
+          <a href='https://github.com/Rutvij-P' target='_blank'><p>Github</p></a>
+          <a href='https://dev.to/jivtur' target='_blank'><p>Dev.to</p></a>
           {/* ... more items */}
         </div>
       </div>
